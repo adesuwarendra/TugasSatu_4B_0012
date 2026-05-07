@@ -12,8 +12,12 @@ btnTambah.addEventListener("click", function(){
     const listbaru = document.createElement("li");
     const span = document.createElement("span");
     span.innerHTML = inputValue.value;
+
     const btnHapus = document.createElement("button");
     btnHapus.innerHTML = "Hapus";
+    btnHapus.addEventListener("click", function() {
+    daftarTugas.removeChild(listbaru);
+    });
 
     listbaru.appendChild(span);
     daftarTugas.appendChild(listbaru);
