@@ -1,6 +1,7 @@
 const inputValue = document.getElementById("inputTask");
 const btnTambah = document.getElementById("btnTambahTodo");
 const daftarTugas = document.getElementById("listTugas");
+const btnHapus = document.getElementById("btnHapusTodo");
 
 btnTambah.addEventListener("click", function(){
 
@@ -19,6 +20,15 @@ btnTambah.addEventListener("click", function(){
     inputValue.value ="";
     inputValue.focus();
 
-
 });
+
+btnHapus.addEventListener("click", function(){
+    const tombolHapus = document.createElement ("button");
+    tombolHapus.innerHTML = "";
+    tombolHapus.onclick = function(){
+        listbaru.remove();
+    };
+
+
+})
 
