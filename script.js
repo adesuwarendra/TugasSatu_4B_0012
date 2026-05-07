@@ -21,6 +21,7 @@ btnTambah.addEventListener("click", function(){
 
     listbaru.appendChild(span);
     daftarTugas.appendChild(listbaru);
+    listbaru.appendChild(btnHapus);
 
     inputValue.value ="";
     inputValue.focus();
