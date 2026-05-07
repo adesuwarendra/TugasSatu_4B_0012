@@ -34,3 +34,9 @@ h3{
     border: none;
     color: white;
 }
+
+#btnHapusTodo{
+    background-color: red;
+    border: none;
+    color: white;
+}
