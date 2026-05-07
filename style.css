@@ -35,14 +35,14 @@ h3{
     color: white;
 }
 
-#btnHapusTodo{
-    background-color: red;
-    border: none;
-    color: white;
-}
 
 #btnEditTodo{
     background-color: yellow;
     border: none
     color: black;
+}
+
+button{
+    background-color: aqua;
+    margin-left: 10px;
 }
