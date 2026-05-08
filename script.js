@@ -40,7 +40,10 @@ btnTambah.addEventListener("click", function(){
     const RillTime = new Date();
 
     const formatWaktu = RillTime.toLocaleDateString("id-ID", {
-    
+    day: "numeric",
+    month: "short",
+    hour: "2-digit",
+    minute: "2-digit"
     });
 
     listbaru.appendChild(span);
