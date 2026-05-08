@@ -37,6 +37,9 @@ btnTambah.addEventListener("click", function(){
 
     // penambahan tanggal
     const Tanggal = document.createElement("small");
+    const RillTime = new Date();
+
+    
 
     listbaru.appendChild(span);
     daftarTugas.appendChild(listbaru);
