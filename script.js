@@ -71,6 +71,7 @@ btnTambah.addEventListener("click", function(){
     listbaru.appendChild(btnHapus);
     listbaru.appendChild(btnEdit);
     listbaru.appendChild(Tanggal);
+    listbaru.appendChild(btnStatus);
 
     inputValue.value ="";
     inputValue.focus();
