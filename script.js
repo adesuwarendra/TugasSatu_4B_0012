@@ -48,6 +48,8 @@ btnTambah.addEventListener("click", function(){
 
     Tanggal.innerHTML = ` (${formatWaktu})`;
 
+    const btnStatus = document.createElement("button");
+
     listbaru.appendChild(span);
     daftarTugas.appendChild(listbaru);
     listbaru.appendChild(btnHapus);
