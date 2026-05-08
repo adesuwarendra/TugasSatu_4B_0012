@@ -39,7 +39,9 @@ btnTambah.addEventListener("click", function(){
     const Tanggal = document.createElement("small");
     const RillTime = new Date();
 
+    const formatWaktu = RillTime.toLocaleDateString("id-ID", {
     
+    });
 
     listbaru.appendChild(span);
     daftarTugas.appendChild(listbaru);
