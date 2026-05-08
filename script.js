@@ -15,16 +15,20 @@ btnTambah.addEventListener("click", function(){
 
     const btnHapus = document.createElement("button");
     btnHapus.innerHTML = "Hapus";
+    btnHapus.classList.add("btn-hapus");
     btnHapus.addEventListener("click", function() {
     daftarTugas.removeChild(listbaru);
     });
 
-    const btnEdit = document.createElement("button1");
+    const btnEdit = document.createElement("button");
     btnEdit.innerHTML = "Edit";
+    btnEdit.classList.add("btn-edit");
     btnEdit.addEventListener("click", function() {
         const isiBaru = prompt("Edit Tugas:", span.innerHTML);
 
-
+        if (isiBaru !== null && isiBaru.trim() !== "") {
+        span.innerHTML = isiBaru;
+    }
     });
 
     listbaru.appendChild(span);
