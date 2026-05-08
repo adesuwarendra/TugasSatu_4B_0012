@@ -50,6 +50,7 @@ btnTambah.addEventListener("click", function(){
 
     const btnStatus = document.createElement("button");
     btnStatus.innerHTML = "Progress";
+    btnStatus.classList.add("btn-status", "status-progress");
 
     listbaru.appendChild(span);
     daftarTugas.appendChild(listbaru);
