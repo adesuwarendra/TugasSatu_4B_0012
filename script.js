@@ -53,7 +53,11 @@ btnTambah.addEventListener("click", function(){
     btnStatus.classList.add("btn-status", "status-progress");
 
     btnStatus.addEventListener("click", function() {
-    if (btnStatus.innerHTML === "Progress") { 
+    if (btnStatus.innerHTML === "Progress") {
+        btnStatus.innerHTML = "Done";
+        btnStatus.classList.replace("status-progress", "status-done");
+        span.style.textDecoration = "line-through";
+        span.style.opacity = "0.5";
     } else {
     }
 });
