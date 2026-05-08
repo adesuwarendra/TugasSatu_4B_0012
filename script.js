@@ -21,10 +21,16 @@ btnTambah.addEventListener("click", function(){
 
     const btnEdit = document.createElement("button1");
     btnEdit.innerHTML = "Edit";
+    btnEdit.addEventListener("click", function() {
+        const isiBaru = prompt("Edit Tugas:", span.innerHTML);
+
+
+    });
 
     listbaru.appendChild(span);
     daftarTugas.appendChild(listbaru);
     listbaru.appendChild(btnHapus);
+    listbaru.appendChild(btnEdit);
 
     inputValue.value ="";
     inputValue.focus();
