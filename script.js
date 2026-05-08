@@ -46,10 +46,13 @@ btnTambah.addEventListener("click", function(){
     minute: "2-digit"
     });
 
+    Tanggal.innerHTML = ` (${formatWaktu})`;
+
     listbaru.appendChild(span);
     daftarTugas.appendChild(listbaru);
     listbaru.appendChild(btnHapus);
     listbaru.appendChild(btnEdit);
+    listbaru.appendChild(Tanggal);
 
     inputValue.value ="";
     inputValue.focus();
