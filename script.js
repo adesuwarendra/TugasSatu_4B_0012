@@ -19,6 +19,9 @@ btnTambah.addEventListener("click", function(){
     daftarTugas.removeChild(listbaru);
     });
 
+    const btnEdit = document.createElement("button1");
+    btnEdit.innerHTML = "Edit";
+
     listbaru.appendChild(span);
     daftarTugas.appendChild(listbaru);
     listbaru.appendChild(btnHapus);
