@@ -13,16 +13,20 @@ btnTambah.addEventListener("click", function(){
     const span = document.createElement("span");
     span.innerHTML = inputValue.value;
 
+    // penambahan fitur hapus
     const btnHapus = document.createElement("button");
     btnHapus.innerHTML = "Hapus";
     btnHapus.classList.add("btn-hapus");
+
     btnHapus.addEventListener("click", function() {
     daftarTugas.removeChild(listbaru);
     });
 
+    // penambahan fitur edit
     const btnEdit = document.createElement("button");
     btnEdit.innerHTML = "Edit";
     btnEdit.classList.add("btn-edit");
+
     btnEdit.addEventListener("click", function() {
         const isiBaru = prompt("Edit Tugas:", span.innerHTML);
 
@@ -30,6 +34,9 @@ btnTambah.addEventListener("click", function(){
         span.innerHTML = isiBaru;
     }
     });
+
+    // penambahan tanggal
+    const Tanggal = document.createElement("small");
 
     listbaru.appendChild(span);
     daftarTugas.appendChild(listbaru);
