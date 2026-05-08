@@ -52,6 +52,12 @@ btnTambah.addEventListener("click", function(){
     btnStatus.innerHTML = "Progress";
     btnStatus.classList.add("btn-status", "status-progress");
 
+    btnStatus.addEventListener("click", function() {
+    if (btnStatus.innerHTML === "Progress") { 
+    } else {
+    }
+});
+
     listbaru.appendChild(span);
     daftarTugas.appendChild(listbaru);
     listbaru.appendChild(btnHapus);
